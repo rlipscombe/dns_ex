@@ -8,8 +8,7 @@ defmodule DnsEx.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: DnsEx.Worker.start_link(arg)
-      # {DnsEx.Worker, arg},
+      {DnsEx.Server, 10053}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
