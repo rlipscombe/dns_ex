@@ -28,3 +28,7 @@ For Ubuntu 16.04, create a file `/etc/NetworkManager/dnsmasq.d/dns_ex` containin
 Restart the network-manager service:
 
     sudo service network-manager restart
+
+And now you can just:
+
+    ping delay-1000.ttl-15.foo.dns_ex
